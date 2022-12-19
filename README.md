@@ -7,8 +7,7 @@ TrelloAPIお作法メモ
 
 * PowerUpページを通して、ボードにWebAPIアプリを使う事を登録する
 
-登録ページ
-https://trello.com/power-ups/admin
+登録ページ：https://trello.com/power-ups/admin
 
 例
 <img width="765" alt="trello-powerup-admin" src="https://user-images.githubusercontent.com/20953672/208375257-04ef0e00-e7a5-4a7c-90b4-c825756fe589.png">
@@ -48,6 +47,7 @@ curl 'https://api.trello.com/1/members/me/boards?key={APIキー}&token={APIト�
 {"id":"yyyyyyyyyyyyyyyyyyyyyyyy","name":"ボード名"}
 ```
 のようなレスポンスを得る
+
 このidがidBoardに当たる
 
 * ボードにあるリストを取得する
@@ -81,6 +81,5 @@ curl --request GET --url 'https://api.trello.com/1/lists/{idList}/cards?key={API
 ## まとめ
 
 * 特定のカードを追いかけたいなら、手順が多い
-** アカウント＞アカウントが持つボードを特定＞ボードが持つリストを特定＞リストがもつカードを特定
-と、検索に検索をするしかなさそう
+  * アカウント＞アカウントが持つボードを特定＞ボードが持つリストを特定＞リストがもつカードを特定<br>のように、検索に検索をするしかなさそう
 * idがわかってしまえば、あとはAPIで状態を追いかけられるっぽい
