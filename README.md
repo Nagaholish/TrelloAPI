@@ -24,9 +24,8 @@ APIキー、トークンは他人に公開しないようにする
 
 ### APIを使う
 
-https://developer.atlassian.com/cloud/trello/rest/
-
 * どのAPIにも↑で取得した「APIキー」と「APIトークン」を使用するので覚える
+* APIリファレンス：https://developer.atlassian.com/cloud/trello/rest/
 
 例
 ```
